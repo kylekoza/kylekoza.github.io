@@ -281,6 +281,37 @@ a { color: var(--green); }
 
 .hobby-emoji { font-size: 2.2rem; margin-bottom: 0.8rem; }
 
+/* ---------- Game cards ---------- */
+
+.section-intro { color: var(--ink-soft); margin-bottom: 1.6rem; }
+
+.game-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.4rem;
+}
+
+.game-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--green);
+  box-shadow: 0 8px 20px rgba(34, 48, 31, 0.09);
+}
+
+.game-card h3 { color: var(--green-deep); }
+
+.game-card p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--terracotta);
+}
+
 /* ---------- Chips ---------- */
 
 .chips {
@@ -354,6 +385,6 @@ a { color: var(--green); }
   .hero { padding: 4rem 1.5rem 5rem; }
   .hero-vine { display: none; }
   .section-grid { grid-template-columns: 1fr; gap: 1rem; }
-  .edu-row, .hobby-row { grid-template-columns: 1fr; }
+  .edu-row, .hobby-row, .game-grid { grid-template-columns: 1fr; }
   .about-large { font-size: 1.3rem; }
 }
