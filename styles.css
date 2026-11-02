@@ -389,6 +389,8 @@ a { color: var(--green); }
 
 .paper-card h3 { color: var(--green-deep); line-height: 1.3; }
 
+.paper-card + .paper-card { margin-top: 1.4rem; }
+
 .paper-card .paper-meta {
   margin-top: 0;
   margin-bottom: 0.5rem;
