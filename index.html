@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kyle Koza — Cybersecurity Leader</title>
   <meta name="description" content="Kyle Koza is a cybersecurity leader specializing in vulnerability management and application security, with 15+ years of experience in enterprise security.">
+  <meta name="theme-color" content="#faf7f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161c15" media="(prefers-color-scheme: dark)">
+
+  <!-- Social previews (LinkedIn, Slack, iMessage, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.kylekoza.com/">
+  <meta property="og:title" content="Kyle Koza — Cybersecurity Leader">
+  <meta property="og:description" content="Head of Product Security at IHG Hotels & Resorts. 15+ years securing large, complex organizations; teaches incident response at Georgia Tech.">
+  <meta property="og:image" content="https://www.kylekoza.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Kyle Koza — Cybersecurity Leader">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kyle Koza — Cybersecurity Leader">
+  <meta name="twitter:description" content="Head of Product Security at IHG Hotels & Resorts. 15+ years securing large, complex organizations; teaches incident response at Georgia Tech.">
+  <meta name="twitter:image" content="https://www.kylekoza.com/assets/og-image.png">
+
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,8 +33,13 @@
 
   <nav class="nav">
     <a href="#top" class="nav-name">Kyle Koza</a>
-    <div class="nav-links">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <div class="nav-links" id="nav-links">
       <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
       <a href="#teaching">Teaching</a>
       <a href="#education">Education</a>
       <a href="#beyond">Beyond Work</a>
@@ -41,12 +64,23 @@
       </div>
     </div>
     <div class="hero-vine" aria-hidden="true">
-      <svg viewBox="0 0 200 600" xmlns="http://www.w3.org/2000/svg">
-        <path class="vine-stem" d="M100 600 C 60 480, 140 420, 100 320 C 70 240, 130 180, 100 80 C 92 50, 96 20, 104 0" />
-        <g class="vine-leaf"><path d="M100 500 C 70 490, 50 460, 55 430 C 85 435, 102 465, 100 500 Z"/></g>
-        <g class="vine-leaf"><path d="M100 410 C 130 400, 150 370, 145 340 C 115 345, 98 375, 100 410 Z"/></g>
-        <g class="vine-leaf"><path d="M98 290 C 68 280, 48 250, 53 220 C 83 225, 100 255, 98 290 Z"/></g>
-        <g class="vine-leaf"><path d="M101 190 C 131 180, 151 150, 146 120 C 116 125, 99 155, 101 190 Z"/></g>
+      <svg viewBox="0 0 260 640" xmlns="http://www.w3.org/2000/svg">
+        <!-- main stem -->
+        <path class="vine-stem" d="M150 640 C 100 540, 200 470, 150 380 C 110 300, 190 230, 150 140 C 135 100, 140 50, 160 0" />
+        <!-- side branch -->
+        <path class="vine-stem vine-stem-thin" d="M158 300 C 190 290, 220 310, 235 350" />
+        <path class="vine-stem vine-stem-thin" d="M146 470 C 110 455, 80 470, 60 505" />
+        <!-- leaves, alternating sides -->
+        <g class="vine-leaf"><path d="M150 560 C 110 550, 80 515, 85 475 C 125 480, 150 520, 150 560 Z"/></g>
+        <g class="vine-leaf vine-leaf-light"><path d="M152 500 C 192 490, 222 455, 217 415 C 177 420, 152 460, 152 500 Z"/></g>
+        <g class="vine-leaf vine-leaf-light"><path d="M60 505 C 35 490, 15 460, 22 430 C 50 440, 65 475, 60 505 Z"/></g>
+        <g class="vine-leaf"><path d="M148 400 C 108 390, 78 355, 83 315 C 123 320, 148 360, 148 400 Z"/></g>
+        <g class="vine-leaf vine-leaf-light"><path d="M235 350 C 258 335, 262 300, 248 280 C 225 295, 220 325, 235 350 Z"/></g>
+        <g class="vine-leaf"><path d="M152 290 C 192 280, 222 245, 217 205 C 177 210, 152 250, 152 290 Z"/></g>
+        <g class="vine-leaf vine-leaf-light"><path d="M147 200 C 107 190, 77 155, 82 115 C 122 120, 147 160, 147 200 Z"/></g>
+        <g class="vine-leaf"><path d="M153 120 C 188 110, 212 80, 208 45 C 173 50, 153 85, 153 120 Z"/></g>
+        <!-- bud at the tip -->
+        <g class="vine-leaf vine-leaf-light"><path d="M160 30 C 148 20, 150 2, 162 0 C 172 4, 170 22, 160 30 Z"/></g>
       </svg>
     </div>
   </header>
@@ -83,7 +117,7 @@
           <ol class="timeline">
             <li class="timeline-item">
               <div class="timeline-meta">2022 — Present</div>
-              <h3>Head of Vulnerability Management &amp; Application Security</h3>
+              <h3>Head of Product Security</h3>
               <div class="timeline-org">IHG Hotels &amp; Resorts · Atlanta, GA</div>
               <p>
                 Leading the global programs that find, prioritize, and eliminate
@@ -107,6 +141,30 @@
               </p>
             </li>
           </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="section-grid">
+        <h2 class="section-label">Research</h2>
+        <div class="section-body">
+          <article class="card paper-card">
+            <p class="paper-meta">November 2026 · Technical report · Software-defined radio</p>
+            <h3>Receiving Sensus FlexNet Smart-Meter Transmissions with a Low-Cost SDR</h3>
+            <p>
+              Many electric utilities read their meters over Sensus FlexNet, a
+              licensed-band radio network with no published receiver. Using a $30
+              RTL-SDR, I worked out how its uplink is modulated, built a receiver
+              that recovers clean symbols, and mapped the frame layout. The payload
+              behaves as ciphertext, consistent with the AES-256 encryption Sensus
+              documents.
+            </p>
+            <div class="paper-links">
+              <a href="research/flexnet-rx.pdf" target="_blank" rel="noopener">Read the paper (PDF) ↗</a>
+              <a href="https://github.com/kylekoza/flexnet-rx" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -142,24 +200,6 @@
               <div class="timeline-org">Georgia Institute of Technology</div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills">
-      <div class="section-grid">
-        <h2 class="section-label">Focus Areas</h2>
-        <div class="section-body">
-          <ul class="chips">
-            <li>Vulnerability Management</li>
-            <li>Application Security</li>
-            <li>Incident Response</li>
-            <li>Security Engineering</li>
-            <li>Threat Detection</li>
-            <li>Security Compliance</li>
-            <li>Enterprise Risk</li>
-            <li>Security Education</li>
-          </ul>
         </div>
       </div>
     </section>
@@ -255,16 +295,31 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Gentle reveal-on-scroll for sections
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.section').forEach(s => observer.observe(s));
+    // Mobile menu
+    const nav = document.querySelector('.nav');
+    const toggle = document.querySelector('.nav-toggle');
+    const setMenu = (open) => {
+      nav.classList.toggle('nav-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    };
+    toggle.addEventListener('click', () => setMenu(!nav.classList.contains('nav-open')));
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+
+    // Gentle reveal-on-scroll for sections (skipped when the user prefers reduced motion)
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.section').forEach(s => s.classList.add('visible'));
+    } else {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.section').forEach(s => observer.observe(s));
+    }
   </script>
 
 </body>
